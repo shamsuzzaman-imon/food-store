@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    max-width: 100vw;
+    min-height: 100vh;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Raleway-regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-semibold;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-black;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+/* -----------------colors------------- */
+
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6c6c6c;
+    --danger:#fe4545;
+    --pure:#fefefe;
+    --light:#f0f0f0;
+    --haven:#ffffff;
+    --footer:#2d333f;
+}
+
+.container{
+    width: 100%;
+    padding: 0px 1.5rem; 
+    margin: 0 auto;  
+}
+
+/* ----------Container media query-------------- */
+
+@media (min-width:57.6rem){
+    .container{
+        max-width: 54rem;
+    }
+}
+
+@media (min-width:76.8rem){
+    .container{
+        max-width: 72rem;
+    }
+}
+
+@media (min-width:99.2rem){
+    .container{
+        max-width: 96rem;
+    }
+}
+
+@media (min-width:120rem){
+    .container{
+        max-width: 115.2rem;
+    }
+} 
+
+/* ---------------Header area start ------------- */
+
+header.topbar{
+    background-color: var(--secondary);
+    color: var(--pure);   
+    font-family: "Raleway-semibold";
+    padding: 0.75rem 0;
+}
+
+header.topbar .icons a{
+    margin-right: 0.6rem;
+}
+
+header.topbar .auth > div a{
+    color: var(--pure);
+    text-decoration: none;
+}
+
+header.topbar .auth .devider{
+    padding: 0 1rem;
+}
+
+header.topbar .auth img{
+    margin-right: 0.35rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
