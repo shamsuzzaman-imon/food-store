@@ -29,6 +29,11 @@ html,body{
 }
 
 @font-face {
+    font-family: Raleway-extrabold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
     font-family: Raleway-semibold;
     src: url(../fonts/Raleway-SemiBold.ttf);
 }
@@ -187,3 +192,88 @@ nav .navbar a:hover{
     bottom: -23px;;
 }
 
+header.hero{
+    height: 600px;
+    max-width: 100vw;
+    background-image: url("../images/hero.png");
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+header.hero .container{
+    position: relative;
+}
+
+header.hero .welcome{
+    margin-bottom: 0.25rem;
+}
+
+header.hero .welcome span{
+    font-family: "Raleway-bold";
+    color: var(--secondary);
+    margin-right: 0.75rem;
+}
+
+header.hero h1{
+    font-family: "Raleway-extrabold";
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+header.hero h1 span{
+    color: var(--primary);
+}
+
+header.hero p{
+    font-family: "Raleway-medium";
+    width: 50%;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.4rem;
+    border: 1px solid transparent;
+    outline: none;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--haven);
+}
+
+.btn-primary:hover{
+    background-color: var(--haven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary{
+    background-color: var(--secondary);
+    color: var(--haven);
+}
+
+.btn-secondary:hover{
+    background-color: var(--heaven);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+header.hero button:first-child{
+    margin-right: 0.5rem;
+}
+
+header.hero .hero-img{
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+
+}
