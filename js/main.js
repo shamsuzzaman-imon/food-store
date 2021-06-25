@@ -5,7 +5,7 @@ $(document).ready(function(){
     prevArrow:".pre-btn",
     nextArrow:".next-btn",
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     })
 });
 
